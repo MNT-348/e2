@@ -1,3 +1,5 @@
-<h1>Practice</h1>
+<?php
 
-<img src='hes-logo.png' alt='Harvard Extension School Logo'>
+# placeholder for PHP
+
+require 'index-view.php';
