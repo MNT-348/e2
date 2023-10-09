@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang='en'>
+<?php
 
-<head>
-    <title>Project 1</title>
-    <meta charset='utf-8'>
-    <link href=data:; rel=icon>
-</head>
+# placeholder for PHP
 
-<body>
-    <h1>Project 1</h1>
-
-    <h2>Game Mechanics</h2>
-    <ul>
-        <li>...</li>
-    </ul>
-
-    <h2>Results</h2>
-    <ul>
-        <li>...</li>
-    </ul>
-</body>
+require 'index-view.php';
