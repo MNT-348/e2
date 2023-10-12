@@ -9,9 +9,6 @@ $p1Coins = 5;
 $p2Coins = 5;
 # Coin face states
 $coin = ['Heads','Tails'];
-
-// View: print "Player 1 is Evens, and starts with 5 coins.\n"; 
-// View: print "Player 2 is Odds, and starts with 5 coins.\n";
 # Refinement note: will remove magic number '5' later; possibly add "set starting HP" fxn
 
 # WHILE either player has HP remaining
