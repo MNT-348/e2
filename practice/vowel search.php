@@ -10,7 +10,7 @@ function vowelCount($word)
     // Convert the word to lowercase for case-normalized matching
     $word = strtolower($word);
 
-    // Loop through each character in the word
+    // Loop through each character in the word, increase $count per vowel found
     for ($i = 0; $i < strlen($word); $i++) 
     {
         if (in_array($word[$i], $vowels))
