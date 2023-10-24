@@ -12,30 +12,30 @@ $coin = ['Heads','Tails'];
 # Refinement note: will remove magic number '5' later; possibly add "set starting HP" fxn
 
 # WHILE either player has HP remaining
-while ($p1Coins != 0 && $p2Coins != 0)
+while ($p1Coins && $p2Coins) 
     {
-        # Randomization fxn for P1 and P2
-        $p1Face = $coin[rand(0,1)];
-        $p2Face = $coin[rand(0,1)];
-
-        # Check coin faces and decrease loser HP
-        if ($p1Face == $p2Face)
+        $p1Face = $coin[rand(0, 1)];
+        $p2Face = $coin[rand(0, 1)];
+    
+        if ($p1Face == $p2Face) 
         {
-            $p2Coins--;
-            $p1Coins++;
             $roundWinner = $player1;
             $roundLoser = $player2;
-        }
-        else
+        } 
+        else 
         {
-            $p1Coins--;
-            $p2Coins++;
             $roundWinner = $player2;
             $roundLoser = $player1;
         }
     
+    $p1Coins += ($p1Face == $p2Face);
+    $p2Coins -= ($p1Face == $p2Face);
+    $p1Coins -= ($p1Face != $p2Face);
+    $p2Coins += ($p1Face != $p2Face);
+    
     # Initialize array to pass values to 'echo' in View
-    $results[] = [
+    $results[] = 
+    [
         'p1Face' => $p1Face,
         'p2Face' => $p2Face,
         'p1_HP' => $p1Coins,
@@ -45,16 +45,9 @@ while ($p1Coins != 0 && $p2Coins != 0)
     ];
     }
 
+
 # Print win states after a player has no more HP/coins
-if ($p1Coins == 0)
-{
-    $winner = $player2;
-    $loser = $player1;
-}
-else
-{
-    $winner = $player1;
-    $loser = $player2;
-}
+$winner = ($p1Coins == 0) ? $player2 : $player1;
+$loser = ($p1Coins == 0) ? $player1 : $player2;
 
 require 'index-view.php';
