@@ -1,6 +1,6 @@
 # Project 2
 + By: Minh Tran
-+ URL: <http://e2p1.hesdgmde2.me>
++ URL: <http://e2p2.hesdgmde2.me>
 
 ## Outside resources
 + Buck, S. (n.d.). /e2 Github Connect. https://hesweb.dev/e2/notes
