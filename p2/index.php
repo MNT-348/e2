@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// I'm not sure if these are redundant since these are also in my `process.php` but I'm delcaring them anyways to be safe.
+// I'm not sure if these are redundant since these are also in my `process.php` but I'm declaring them anyways to be safe.
 $results = null;
 $winner = null;
 $loser = null;
