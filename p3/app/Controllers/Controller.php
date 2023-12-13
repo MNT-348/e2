@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Commands;
+namespace App\Controllers;
 
-class Command
+class Controller
 {
     protected $app;
     
