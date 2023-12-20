@@ -42,8 +42,8 @@
                 You have <b>lost</b> this round! <span class='lost'><b>The Computer takes a coin from you.</b></span>
             @endif
 
-            <br>You have <b><i>{{ $playerCoins }} coins remaining!</i></b>.<br>
-            The Computer has <b><i>{{ $computerCoins }} coins remaining!</i></b>.<br>
+            <br>You have <b><i>{{ $playerCoins }} coins remaining</i></b>.<br>
+            The Computer has <b><i>{{ $computerCoins }} coins remaining</i></b>.<br>
 
             @if ($playerCoins === 0)
                 <div class="game-over">
@@ -63,6 +63,9 @@
                 </div>
             @endif
         </div>
+    @else
+        <br>You have <b>{{ $playerCoins }} coins remaining</b>.<br>
+        The Computer has <b>{{ $computerCoins }} coins remaining</b>.<br>
     @endif
     <div>
         <form method='POST' action='/restart' style="display: inline;">
