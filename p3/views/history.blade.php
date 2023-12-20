@@ -5,6 +5,7 @@
 @endsection
 
 @section('content')
+    <a href='/'>Return to <b>Homepage</b></a>
     <h2>Round History</h2>
     Click a Round to see details:
     <ul>

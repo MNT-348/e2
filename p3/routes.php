@@ -7,5 +7,6 @@ return [
     '/' => ['AppController', 'index'],
     '/process' => ['AppController', 'process'],
     '/history' => ['AppController', 'history'],
-    '/round' => ['AppController', 'round']
+    '/round' => ['AppController', 'round'],
+    '/restart' => ['AppController', 'restart']
 ];

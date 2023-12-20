@@ -16,7 +16,11 @@ class AppCommand extends Command
     {
         $this->app->db()->createTable('rounds', [
             'choice' => 'char(5)',
+            'cpuFlip' => 'char(5)',
+            'playerCoins' => 'tinyint(1)',
+            'computerCoins' => 'tinyint(1)',
             'won' => 'tinyint(1)',
+            'winner' => 'varchar(8)',
             'timestamp' => 'timestamp'
         ]);
 
