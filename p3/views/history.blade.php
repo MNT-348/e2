@@ -12,8 +12,8 @@
         @foreach ($rounds as $round)
             <li>
                 <a href='/round?id={{ $round['id'] }}'>{{ $round['timestamp'] }} </a>
-                @if ($round['winner'] !== 'None' && $round['winner'] !== '')
-                    MATCH POINT
+                @if ($round['winner'] !== 'None' && !empty($round['winner']))
+                    <span class='won'><b>(GAME POINT)</b></span>
                 @endif
             </li>
         @endforeach
