@@ -64,9 +64,11 @@
             @endif
         </div>
     @else
+        <!-- Baseline starting report of initial coin pools. -->
         <br>You have <b>{{ $playerCoins }} coins remaining</b>.<br>
         The Computer has <b>{{ $computerCoins }} coins remaining</b>.<br>
     @endif
+    <!-- Restart button, resets coin pools -->
     <div>
         <form method='POST' action='/restart' style="display: inline;">
             <button type='submit'>Press to Restart</button>

@@ -52,6 +52,7 @@ class AppController extends Controller
         $playerCoins = $_SESSION['playerCoins'] ?? 5;
         $computerCoins = $_SESSION['computerCoins'] ?? 5;
 
+        // Increment/Decrement winner/loser coin pools
         if ($won) {
             $playerCoins += 1;
             $computerCoins -= 1;
@@ -108,7 +109,7 @@ class AppController extends Controller
         return $this->app->redirect('/');
     }
 
-    // NOTE
+    // Passes round data into database
     public function history()
     {
         $rounds = $this->app->db()->all('rounds');
@@ -116,7 +117,7 @@ class AppController extends Controller
         return $this->app->view('history', ['rounds' => $rounds]);
     }
 
-    // NOTE
+    // Displays specific round's data
     public function round()
     {
         $id = $this->app->param('id');
