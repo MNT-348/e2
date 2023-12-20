@@ -23,7 +23,7 @@
 + I enjoyed your course immensely for its clarity and structure, but as a **private** note to you, I'm truly burnt out from taking CS50 concurrently this semester. 
     - There's a lot I wanted to do with this project that I just couldn't from personal mental fatigue.
     - This course made HTML, CSS, and integrating it with other functional languages (e.g. PHP here, Python/JS otherwise) so much easier to comprehend in terms of how to design a web application and integrate further functionality (OOP theory especially).
-+ Closing Note: My final project admittedly isn't 100% what I was aiming for in what I wanted to do, but as a programming beginner, I'm very, very glad I took your course overall. It's given me far more in terms of coding understanding than just with web design; it's actually a pretty great CS course in and of itself. 
++ Closing Note: My final project admittedly isn't 100% what I was aiming for in what I wanted to do, but as a programming beginner, I'm very, very glad I took your course overall. It's given me far more in terms of coding understanding than just with web design; it's actually a great CS course in and of itself. 
     - I can't take the sequel course immediately due to lack of funding at the moment, but hope to if it's offered later in 2024. Thank you for everything!
 
 ## Codeception Testing Output:
